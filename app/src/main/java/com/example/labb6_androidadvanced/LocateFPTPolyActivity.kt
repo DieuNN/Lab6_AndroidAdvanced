@@ -28,6 +28,6 @@ class LocateFPTPolyActivity : AppCompatActivity(), OnMapReadyCallback {
         // Add a marker in Sydney and move the camera
         val FPTPoly = LatLng(21.038187854213614, 105.74677637185616)
         mMap.addMarker(MarkerOptions().position(FPTPoly).title("Marker in FPT Poly"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(FPTPoly))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(FPTPoly, 14.2f))
     }
 }

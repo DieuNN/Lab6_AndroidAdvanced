@@ -43,6 +43,6 @@ class OpenMapActivity : AppCompatActivity(), OnMapReadyCallback {
         // Add a marker in Sydney and move the camera
         val HaNoi = LatLng(21.028511, 105.804817)
         mMap.addMarker(MarkerOptions().position(HaNoi).title("Marker in Hanoi"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(HaNoi))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(HaNoi, 14f))
     }
 }
